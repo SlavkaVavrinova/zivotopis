@@ -12,7 +12,7 @@
     <header>
       <img
         class="foto"
-        src="stanislavaVavrinova.jpg"
+        src="stanislavaVavrinova2.jpg"
         alt="Stanislava Vavřinová"
       />
       <div class="headerRightSide">
@@ -20,12 +20,17 @@
 
         <ul class="contactInformation">
           <li class="contact">
-            <div>
-              <img src="phone.svg" alt="Ikona telefon" />+420 775 959 988
-            </div>
-            <div>
-              <img src="email.svg" alt="Ikona email" /> vavrinovas@gmail.com
-            </div>
+            <a href="tel:+420775959988">
+              <img src="phone.svg" alt="Ikona telefon" />+420 775 959 988</a
+            >
+            <a href="malito:vavrinovas@gmail.com">
+              <img src="email.svg" alt="Ikona email" /> vavrinovas@gmail.com</a
+            >
+          </li>
+
+          <li class="address">
+            <img src="address.svg" alt="Ikona adresy" /> České Budějovice, Nové
+            Homole
           </li>
 
           <li class="socialNetworks">
@@ -51,10 +56,6 @@
               />Slávka Vavřinová</a
             >
           </li>
-          <li class="address">
-            <img src="address.svg" alt="Ikona adresy" /> České Budějovice, Nové
-            Homole
-          </li>
         </ul>
 
         <div class="important">
@@ -62,13 +63,12 @@
             <h2>IT znalost</h2>
             <ul>
               <li>HTML/CSS</li>
-              <li>Bootstrap</li>
-              <li>JavaScript</li>
-              <li>React</li>
+              <li>JavaScript, React, Next.js</li>
+              <li>PHP</li>
               <li>UX Design</li>
               <li>WordPress</li>
-              <li>Canva</li>
-              <li>Photoshop</li>
+              <li>Bootstrap</li>
+              <li>Canva, Photoshop</li>
             </ul>
           </section>
           <section>
@@ -109,10 +109,9 @@
             <h2>O mně</h2>
             <p>
               S webem jsem pracovala na amatérské úrovni, ale mateřská dovolená
-              v kombinaci s lockdownem mi umožnila studium hlouběji. Velice mě
-              to baví. Chci si najít práci, kde znalosti využiji a prohloubím
-              je. Zatím mohu na částečný úvazek při mateřské dovolené a po roce
-              na HPP.
+              v kombinaci s lockdownem to změnila. Volný čas jsem věnovala
+              studiu a nyní chci najít práci, kde znalosti využiji a prohloubím
+              je.
             </p>
           </section>
 
@@ -120,7 +119,7 @@
             <h2>Kurzy</h2>
             <img
               class="logoCzechitas"
-              src="logoCzechitas.png"
+              src="logoCzechitas.svg"
               alt="Logo Czechitas"
             />
             <ul>
@@ -131,38 +130,29 @@
               <li>Wordpress 1, 2, 3</li>
               <li>Facebook, Instagram, LinkedIn</li>
               <li>Photoshop</li>
-              <li>Úvod do HTML a CSS</li>
-              <li>Úvod do programování 1 - JavaScript</li>
+              <li>HTML a CSS</li>
+              <li>JavaScript</li>
             </ul>
-
-            <img
-              class="logoCoursera"
-              src="coursera.svg"
-              alt="Logo Coursera"
-            /><img class="logoGoogle" src="google.svg" alt="Logo Google" />
+            <div class="google">
+              <img
+                class="logoCoursera"
+                src="coursera.svg"
+                alt="Logo Coursera"
+              /><img class="logoGoogle" src="google2.svg" alt="Logo Google" />
+            </div>
             <ul>
-              <li>Google UX Design Professional Certificate</li>
+              <li>UX Design Professional Certificate</li>
             </ul>
 
-            <img class="logoUdemy" src="udemy.svg" alt="Logo Udemy" />
             <img class="logoUdemy" src="udemy-logo.png" alt="Logo Udemy" />
             <ul>
               <li>Complete React Developer in 2021</li>
             </ul>
           </section>
-
-          <section>
-            <h2>Jazykové znalosti</h2>
-            <ul>
-              <li>Anglický jazyk středně pokročilá znalost</li>
-              <li>Německý jazyk středně pokročilá znalost</li>
-              <li>Francouzský jazyk pasivní znalost</li>
-            </ul>
-          </section>
         </div>
 
         <div class="rightSide">
-          <section>
+          <section class="work">
             <h2>Pracovní zkušenosti</h2>
             <h3>Rodičovská pauza | 2017 – současnost</h3>
             <ul>
@@ -176,7 +166,9 @@
               </li>
             </ul>
 
-            <h3>Československá obchodní banka, a.s. | 2008 - 2017</h3>
+            <h3 class="csob">
+              Československá obchodní banka, a.s. | 2008 - 2017
+            </h3>
             <p>České Budějovice – Hroznová, úvěrový specialista</p>
             <p>Český Krumlov – Špičák, klientský poradce</p>
             <ul>
@@ -186,10 +178,7 @@
               </li>
               <li>Akvizice nových a obsluha stávajících klientů</li>
               <li>Odpovědnost za výsledky pobočky v oblasti financování</li>
-              <li>
-                Školení kolegů a externích zpracovatelů v úvěrové doméně včetně
-                spolupráce
-              </li>
+              <li>Školení kolegů a externích zpracovatelů v úvěrové doméně</li>
               <li>Aktivní spolupráce s ostatními útvary banky</li>
               <li>
                 Vzdělávání v bankovnictví, prodejních a komunikačních
@@ -198,7 +187,7 @@
             </ul>
           </section>
 
-          <section>
+          <section class="education">
             <h2>Vzdělání</h2>
             <h3>Jihočeská univerzita, Ekonomická fakulta | 2005 - 2010</h3>
             <ul>
@@ -207,7 +196,21 @@
               <li>Obor Obchodní podnikání</li>
             </ul>
           </section>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="leftSide">
+          <section>
+            <h2>Jazykové znalosti</h2>
+            <ul>
+              <li>Anglický jazyk středně pokročilá znalost</li>
+              <li>Německý jazyk středně pokročilá znalost</li>
+              <li>Francouzský jazyk pasivní znalost</li>
+            </ul>
+          </section>
+        </div>
+        <div class="rightSide">
           <section>
             <h2>Ostatní</h2>
             <ul>
@@ -226,6 +229,9 @@
         </div>
       </div>
     </body>
-    <footer><img src="" alt="" /> Nějaký copywrite</footer>
+    <footer>
+      <img class="copyright" src="copyright.svg" alt="copyright" />SlávkaVav
+      2021
+    </footer>
   </div>
 </html>
