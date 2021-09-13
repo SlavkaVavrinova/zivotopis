@@ -70,13 +70,19 @@ a {
   cursor: pointer;
 }
 
-a:hover,
-a:focus {
+a:hover {
   background-color: #582c3e;
   color: #ffffff;
   border-radius: 5px;
 }
 
+a:active,
+a:focus {
+  background-color: #dfc7d0;
+  color: #582c3e;
+  border-radius: 5px;
+  text-decoration: none;
+}
 .headerRightSide {
   width: 100wv;
   padding-left: 1rem;
@@ -208,6 +214,10 @@ a:focus {
   margin-top: 1rem;
 }
 
+.other {
+  margin-bottom: 3rem;
+}
+
 footer {
   width: 100%;
   text-align: center;
@@ -270,7 +280,6 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 0.5rem 0.5rem 0.5rem;
-
     margin: 0;
   }
 
@@ -299,6 +308,7 @@ footer {
   .courses {
     padding-left: 0.5rem;
   }
+
   .languages,
   .aboutMe {
     padding-left: 0.5rem;
@@ -325,6 +335,10 @@ footer {
   .important {
     border: 0.5px solid #582c3e;
     box-shadow: 5px 5px 5px -2px #582c3e;
+  }
+
+  .other {
+    margin-bottom: 0;
   }
 
   footer {
