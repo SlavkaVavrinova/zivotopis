@@ -82,18 +82,23 @@ a:focus {
 
 .contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   padding-bottom: 0.5rem;
+  padding-left: 30px;
 }
 
 .contact a,
 .socialNetworks a,
-.address {
+.address div,
+.address a {
   display: flex;
   align-items: center;
 }
 
+.contact a {
+  width: 35%;
+}
 .socialNetworks {
   display: flex;
   justify-content: space-between;
@@ -103,7 +108,15 @@ a:focus {
 .address {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-left: 30px;
 }
+
+.address div,
+.address a {
+  width: 35%;
+}
+
 .headerRightSide img {
   width: 1.5rem;
   height: 1.5rem;
@@ -114,8 +127,21 @@ a:focus {
   display: flex;
   justify-content: space-between;
   background-color: #dfc7d0;
-  padding: 0 15px 0.5rem 15px;
+  padding: 0 15px 0.5rem 30px;
   border-radius: 5px;
+}
+
+.important__it {
+  width: 40%;
+}
+
+.important__portfolio {
+  width: 60%;
+}
+
+.important__portfolio li {
+  display: flex;
+  justify-content: space-between;
 }
 
 .important ul {
