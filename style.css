@@ -83,6 +83,7 @@ a:focus {
   border-radius: 5px;
   text-decoration: none;
 }
+
 .headerRightSide {
   width: 100wv;
   padding-left: 1rem;
@@ -322,6 +323,9 @@ footer {
 
 @media print {
   .page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1cm;
     margin: 0;
     border: initial;
     border-radius: initial;
@@ -331,10 +335,74 @@ footer {
     page-break-after: always;
   }
 
-  .courses,
+  h1 {
+    position: static;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .foto {
+    width: 36%;
+    margin: 0;
+  }
+
+  .headerRightSide {
+    width: 64%;
+  }
+
+  .contact a {
+    width: 35%;
+  }
+
+  .address div,
+  .address a {
+    width: 35%;
+  }
+
   .important {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    margin: 0;
     border: 0.5px solid #582c3e;
     box-shadow: 5px 5px 5px -2px #582c3e;
+  }
+
+  .important__it {
+    width: 40%;
+  }
+
+  .important__portfolio {
+    width: 60%;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .leftSide {
+    width: 36%;
+    padding-left: 0rem;
+  }
+
+  .rightSide {
+    width: 64%;
+    padding: 0 1rem 0 1.5rem;
+  }
+
+  .courses {
+    padding-left: 0.5rem;
+    border: 0.5px solid #582c3e;
+    box-shadow: 5px 5px 5px -2px #582c3e;
+  }
+
+  .languages,
+  .aboutMe {
+    padding-left: 0.5rem;
   }
 
   .other {
