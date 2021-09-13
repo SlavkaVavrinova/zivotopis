@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-* {
+html {
   box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 
 .page {
-  width: 21cm;
-  min-height: 29.7cm;
-  padding: 1cm;
-  margin: 1cm auto;
-  border: 1px #d3d3d3 solid;
-  border-radius: 5px;
+  width: 100vw;
   background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   line-height: 1.5;
   font-size: 75%;
   font-family: 'Montserrat', sans-serif;
@@ -21,22 +20,28 @@
 
 header {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .foto {
-  width: 36%;
+  width: 60vw;
+  margin: 2.5rem 20vw 1rem 20vw;
   border-radius: 5px;
   box-shadow: 5px 5px 5px -2px #582c3e;
 }
 
 h1 {
+  position: absolute;
   text-align: center;
   margin: 0;
   padding: 0;
   color: #582c3e;
   font-weight: 700;
   font-style: italic;
+  width: 100vw;
+  top: 0;
 }
 
 h2 {
@@ -62,16 +67,18 @@ p {
 
 a {
   color: #582c3e;
+  cursor: pointer;
 }
 
 a:hover,
 a:focus {
   background-color: #582c3e;
   color: #ffffff;
+  border-radius: 5px;
 }
 
 .headerRightSide {
-  width: 64%;
+  width: 100wv;
   padding-left: 1rem;
 }
 
@@ -96,9 +103,6 @@ a:focus {
   align-items: center;
 }
 
-.contact a {
-  width: 35%;
-}
 .socialNetworks {
   display: flex;
   justify-content: space-between;
@@ -112,11 +116,6 @@ a:focus {
   padding-left: 30px;
 }
 
-.address div,
-.address a {
-  width: 35%;
-}
-
 .headerRightSide img {
   width: 1.5rem;
   height: 1.5rem;
@@ -124,19 +123,11 @@ a:focus {
 }
 
 .important {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding: 0 0.5rem 0.5rem 1rem;
+  margin-left: 0rem;
   background-color: #dfc7d0;
-  padding: 0 0.5rem 0.5rem 0.5rem;
   border-radius: 5px;
-}
-
-.important__it {
-  width: 40%;
-}
-
-.important__portfolio {
-  width: 60%;
 }
 
 .important__portfolio li {
@@ -151,27 +142,28 @@ a:focus {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .leftSide {
-  width: 36%;
+  width: 100%;
+  padding-left: 1rem;
 }
 
 .languages,
 .aboutMe {
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 .rightSide {
-  width: 64%;
-  padding: 0 1rem 0 1.5rem;
+  width: 100%;
+  padding: 0 1rem 0 2rem;
 }
 
 .courses {
   background-color: #dfc7d0;
   margin-top: 0.5rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   padding-bottom: 0.5rem;
   border-radius: 5px;
 }
@@ -233,6 +225,84 @@ footer {
 .copyright {
   height: 1rem;
   padding-right: 1em;
+}
+
+@media (min-width: 500px) {
+  .page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1cm;
+    margin: 1cm auto;
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    position: static;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .foto {
+    width: 36%;
+    margin: 0;
+  }
+
+  .headerRightSide {
+    width: 64%;
+  }
+
+  .contact a {
+    width: 35%;
+  }
+
+  .address div,
+  .address a {
+    width: 35%;
+  }
+
+  .important {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+
+    margin: 0;
+  }
+
+  .important__it {
+    width: 40%;
+  }
+
+  .important__portfolio {
+    width: 60%;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .leftSide {
+    width: 36%;
+    padding-left: 0rem;
+  }
+
+  .rightSide {
+    width: 64%;
+    padding: 0 1rem 0 1.5rem;
+  }
+
+  .courses {
+    padding-left: 0.5rem;
+  }
+  .languages,
+  .aboutMe {
+    padding-left: 0.5rem;
+  }
 }
 
 @page {
