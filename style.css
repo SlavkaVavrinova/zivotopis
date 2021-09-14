@@ -86,7 +86,7 @@ a:focus {
 
 .headerRightSide {
   width: 100wv;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .contactInformation {
@@ -99,7 +99,7 @@ a:focus {
   justify-content: center;
   text-align: center;
   padding-bottom: 0.5rem;
-  padding-left: 30px;
+  padding-left: 0.5rem;
 }
 
 .contact a,
@@ -108,6 +108,7 @@ a:focus {
 .address a {
   display: flex;
   align-items: center;
+  padding: 0 0.5rem;
 }
 
 .socialNetworks {
@@ -120,7 +121,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 0.5rem;
 }
 
 .headerRightSide img {
@@ -132,7 +133,7 @@ a:focus {
 .important {
   width: 100%;
   padding: 0 0.5rem 0.5rem 1rem;
-  margin-left: 0rem;
+  margin-left: 0.5rem;
   background-color: #dfc7d0;
   border-radius: 5px;
 }
@@ -153,8 +154,8 @@ a:focus {
 }
 
 .leftSide {
-  width: 100%;
-  padding-left: 1rem;
+  width: 100vw;
+  padding-left: 0;
 }
 
 .languages,
@@ -163,8 +164,8 @@ a:focus {
 }
 
 .rightSide {
-  width: 100%;
-  padding: 0 1rem 0 2rem;
+  width: 100vw;
+  padding: 0 0 0 1rem;
 }
 
 .courses {
@@ -220,7 +221,7 @@ a:focus {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   background-color: #582c3e;
   color: #ffffff;
@@ -266,14 +267,26 @@ footer {
 
   .headerRightSide {
     width: 64%;
-  }
-
-  .contact a {
-    width: 35%;
+    padding-left: 1rem;
   }
 
   .address div,
   .address a {
+    width: 35%;
+  }
+
+  .contact a,
+  .socialNetworks a,
+  .address div,
+  .address a {
+    padding: 0;
+  }
+
+  .contact,
+  .address {
+    padding-left: 30px;
+  }
+  .contact a {
     width: 35%;
   }
 
@@ -295,6 +308,9 @@ footer {
   .container {
     flex-direction: row;
   }
+  .socialNetworks {
+    justify-content: space-between;
+  }
 
   .leftSide {
     width: 36%;
@@ -313,6 +329,10 @@ footer {
   .languages,
   .aboutMe {
     padding-left: 0.5rem;
+  }
+
+  footer {
+    width: 100%;
   }
 }
 
